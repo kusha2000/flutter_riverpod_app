@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../data/models/post.dart';
+import 'package:flutter_riverpod_app/data/models/post.dart';
 
 class PostListTile extends StatelessWidget {
   final Post post;
@@ -14,7 +14,7 @@ class PostListTile extends StatelessWidget {
         leading: CircleAvatar(
           backgroundColor: Theme.of(context).colorScheme.primaryContainer,
           child: Text(
-            '\${post.id}',
+            '${post.id}',
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.bold,
